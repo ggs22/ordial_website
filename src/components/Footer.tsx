@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="Ordial Logo"
                 width={120} 
                 height={40}
-                className="h-16 w-auto filter brightness-0 invert"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
