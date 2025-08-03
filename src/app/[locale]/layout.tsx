@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,7 @@ export default async function LocaleLayout({
     <div>
       <Navigation locale={locale} />
       <main>{children}</main>
-      <footer style={{padding: '20px', borderTop: '1px solid #ccc', marginTop: '20px', backgroundColor: '#0f1e32', color: 'white', textAlign: 'center'}}>
-        <p>© 2024 Ordial. {locale === 'fr' ? 'Tous droits réservés' : 'All rights reserved'}.</p>
-      </footer>
+      <Footer locale={locale} />
     </div>
   );
 }
