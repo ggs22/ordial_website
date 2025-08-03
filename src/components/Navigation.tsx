@@ -4,17 +4,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Navigation() {
+interface NavigationProps {
+  locale: string;
+}
+
+export default function Navigation({ locale }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const nav = {
+    home: locale === 'fr' ? 'Accueil' : 'Home',
+    services: locale === 'fr' ? 'Services' : 'Services', 
+    about: locale === 'fr' ? 'À propos' : 'About',
+    contact: locale === 'fr' ? 'Contact' : 'Contact'
+  };
 
   return (
     <nav className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-[80px]">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href={`/${locale}`} className="flex items-center">
               <Image 
-                // src="/images/ordial-logo.svg"
                 src="/images/cropped_20250801-152229_first_letter_ordial_logo.svg"
                 alt="Ordial Logo"
                 width={120} 
@@ -25,21 +35,37 @@ export default function Navigation() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-900 hover:text-[#0f1e32] transition-colors">
-              Home
+            <Link href={`/${locale}`} className="text-gray-900 hover:text-[#0f1e32] transition-colors">
+              {nav.home}
             </Link>
-            <Link href="/services" className="text-gray-900 hover:text-[#0f1e32] transition-colors">
-              Services
+            <Link href={`/${locale}/services`} className="text-gray-900 hover:text-[#0f1e32] transition-colors">
+              {nav.services}
             </Link>
-            <Link href="/about" className="text-gray-900 hover:text-[#0f1e32] transition-colors">
-              About
+            <Link href={`/${locale}/about`} className="text-gray-900 hover:text-[#0f1e32] transition-colors">
+              {nav.about}
             </Link>
-            <Link href="/contact" className="bg-[#0f1e32] text-white px-4 py-2 rounded-lg hover:bg-[#0a1524] transition-colors">
-              Contact
+            <Link href={`/${locale}/contact`} className="bg-[#0f1e32] text-white px-4 py-2 rounded-lg hover:bg-[#0a1524] transition-colors">
+              {nav.contact}
             </Link>
+            <div className="flex items-center space-x-2">
+              <a href="/en" className={`px-2 py-1 text-sm ${locale === 'en' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
+                🇺🇸 EN
+              </a>
+              <a href="/fr" className={`px-2 py-1 text-sm ${locale === 'fr' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
+                🇫🇷 FR
+              </a>
+            </div>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <a href="/en" className={`px-2 py-1 text-sm ${locale === 'en' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
+                🇺🇸 EN
+              </a>
+              <a href="/fr" className={`px-2 py-1 text-sm ${locale === 'fr' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
+                🇫🇷 FR
+              </a>
+            </div>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-900 hover:text-[#0f1e32] focus:outline-none"
@@ -55,17 +81,17 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            <Link href="/" className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
-              Home
+            <Link href={`/${locale}`} className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
+              {nav.home}
             </Link>
-            <Link href="/services" className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
-              Services
+            <Link href={`/${locale}/services`} className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
+              {nav.services}
             </Link>
-            <Link href="/about" className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
-              About
+            <Link href={`/${locale}/about`} className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
+              {nav.about}
             </Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
-              Contact
+            <Link href={`/${locale}/contact`} className="block px-3 py-2 text-gray-900 hover:text-[#0f1e32]">
+              {nav.contact}
             </Link>
           </div>
         </div>
