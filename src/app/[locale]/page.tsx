@@ -12,7 +12,7 @@ export default async function Home({
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               {locale === 'fr' ? 'Transformez votre entreprise avec des' : 'Transform Your Business with'}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+              <span className="block text-white">
                 {locale === 'fr' ? 'Solutions d\'IA Intelligentes' : 'Intelligent AI Solutions'}
               </span>
             </h1>
@@ -25,7 +25,7 @@ export default async function Home({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`/${locale}/contact`}
-                className="bg-white text-[#0f1e32] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0f1e32] transition-colors"
               >
                 {locale === 'fr' ? 'Commencer' : 'Get Started'}
               </a>

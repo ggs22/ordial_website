@@ -21,7 +21,7 @@ export default function Navigation({ locale }: NavigationProps) {
   return (
     <nav className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-[80px]">
+        <div className="flex justify-between h-[90px]">
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
               <Image 
@@ -44,7 +44,7 @@ export default function Navigation({ locale }: NavigationProps) {
             <Link href={`/${locale}/about`} className="text-gray-900 hover:text-[#0f1e32] transition-colors">
               {nav.about}
             </Link>
-            <Link href={`/${locale}/contact`} className="bg-[#0f1e32] text-white px-4 py-2 rounded-lg hover:bg-[#0a1524] transition-colors">
+            <Link href={`/${locale}/contact`} className="text-gray-900 hover:text-[#0f1e32] transition-colors">
               {nav.contact}
             </Link>
             <div className="flex items-center space-x-2">

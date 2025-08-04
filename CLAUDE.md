@@ -48,7 +48,8 @@
 - **`middleware.ts`**: Handles locale routing for `/en` and `/fr` paths
 - **`src/app/[locale]/layout.tsx`**: Bilingual navigation and footer
 - **`src/app/[locale]/page.tsx`**: Home page with conditional French/English content
-- **`src/app/page.tsx`**: Redirects root path to `/en`
+- **`src/app/page.tsx`**: Redirects root path to `/fr` (French default)
+- **`src/app/api/contact/route.ts`**: API endpoint for contact form email processing
 
 ### Bilingual Implementation
 
@@ -58,3 +59,22 @@ Content is rendered conditionally using:
 ```
 
 Navigation shows appropriate language indicators with underlined current language.
+
+## Email Configuration
+
+The contact form uses Resend for email delivery. To set up:
+
+1. **Sign up at [Resend](https://resend.com)**
+2. **Get your API key** from the dashboard
+3. **Create `.env.local` file**:
+   ```bash
+   RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
+4. **Configure your domain** in Resend dashboard for professional emails
+5. **Update API route** with your email addresses in `src/app/api/contact/route.ts`
+
+### Features:
+- Bilingual email templates (English/French)
+- Form validation and error handling
+- Loading states and success messages
+- Server-side email processing for security

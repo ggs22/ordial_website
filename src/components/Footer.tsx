@@ -127,7 +127,7 @@ export default function Footer({ locale }: FooterProps) {
               © 2024 Ordial. {footer.allRightsReserved}.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-white transition-colors">
                 {footer.privacy}
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
