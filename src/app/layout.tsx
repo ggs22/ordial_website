@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ordial Technologies - AI & Data Science Consulting",
-  description: "Expert AI, machine learning, and data science consulting services to transform your business with intelligent solutions.",
+  description: "Expert AI, machine learning, and data science consulting services to transform your processes with intelligent solutions.",
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

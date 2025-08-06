@@ -38,7 +38,7 @@
   "about": {
     "hero": {
       "title": "About Ordial",
-      "subtitle": "We are passionate about transforming businesses through the power of AI and data science."
+      "subtitle": "We are passionate about transforming processes through the power of AI and data science."
     },
     "mission": {
       "title": "Our Mission",
@@ -85,7 +85,7 @@
     },
     "cta": {
       "title": "Ready to Work Together?",
-      "subtitle": "Let's discuss how we can help transform your business with AI and data science.",
+      "subtitle": "Let's discuss how we can help transform your processes with AI and data science.",
       "button": "Get in Touch"
     }
   },
@@ -163,7 +163,7 @@
   "contact": {
     "hero": {
       "title": "Get in Touch",
-      "subtitle": "Ready to transform your business with AI? Let's start the conversation."
+      "subtitle": "Ready to transform your processes with AI? Let's start the conversation."
     },
     "form": {
       "title": "Send us a Message",
@@ -212,10 +212,10 @@
     }
   },
   "footer": {
-    "description": "Expert AI, machine learning, and data science consulting services to transform your business with intelligent solutions.",
+    "description": "Expert AI, machine learning, and data science consulting services to transform your processes with intelligent solutions.",
     "services": "Services",
     "company": "Company",
-    "copyright": "© 2024 Ordial. All rights reserved.",
+    "copyright": "© 2025 Ordial. All rights reserved.",
     "privacyPolicy": "Privacy Policy"
   }
 }

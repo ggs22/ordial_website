@@ -85,8 +85,8 @@ export default function Contact() {
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               {locale === 'fr' 
-                ? 'Prêt à transformer votre entreprise avec l\'IA ? Commençons la conversation.'
-                : 'Ready to transform your business with AI? Let\'s start the conversation.'
+                ? 'Prêt à transformer vos processus avec l\'IA ? Commençons la conversation.'
+                : 'Ready to transform your processes with AI? Let\'s start the conversation.'
               }
             </p>
           </div>

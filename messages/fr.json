@@ -38,7 +38,7 @@
   "about": {
     "hero": {
       "title": "À propos d'Ordial",
-      "subtitle": "Nous sommes passionnés par la transformation des entreprises grâce à la puissance de l'IA et de la science des données."
+      "subtitle": "Nous sommes passionnés par la transformation des processus grâce à la puissance de l'IA et de la science des données."
     },
     "mission": {
       "title": "Notre Mission",
@@ -85,7 +85,7 @@
     },
     "cta": {
       "title": "Prêt à Travailler Ensemble?",
-      "subtitle": "Discutons de la façon dont nous pouvons aider à transformer votre entreprise avec l'IA et la science des données.",
+      "subtitle": "Discutons de la façon dont nous pouvons aider à transformer vos processus avec l'IA et la science des données.",
       "button": "Entrer en Contact"
     }
   },
@@ -163,7 +163,7 @@
   "contact": {
     "hero": {
       "title": "Entrer en Contact",
-      "subtitle": "Prêt à transformer votre entreprise avec l'IA? Commençons la conversation."
+      "subtitle": "Prêt à transformer vos processus avec l'IA? Commençons la conversation."
     },
     "form": {
       "title": "Envoyez-nous un Message",
@@ -212,10 +212,10 @@
     }
   },
   "footer": {
-    "description": "Services de conseil expert en IA, apprentissage automatique et science des données pour transformer votre entreprise avec des solutions intelligentes.",
+    "description": "Services de conseil expert en IA, apprentissage automatique et science des données pour transformer vos processus avec des solutions intelligentes.",
     "services": "Services",
     "company": "Entreprise",
-    "copyright": "© 2024 Ordial. Tous droits réservés.",
+    "copyright": "© 2025 Ordial. Tous droits réservés.",
     "privacyPolicy": "Politique de Confidentialité"
   }
 }

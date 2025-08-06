@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ordial - AI & Data Science Consulting",
-  description: "Expert AI, machine learning, and data science consulting services to transform your business with intelligent solutions.",
+  description: "Expert AI, machine learning, and data science consulting services to transform your processes with intelligent solutions.",
 };
 
 export default async function LocaleLayout({

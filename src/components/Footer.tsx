@@ -18,8 +18,8 @@ export default function Footer({ locale }: FooterProps) {
     privacy: locale === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy',
     allRightsReserved: locale === 'fr' ? 'Tous droits réservés' : 'All rights reserved',
     description: locale === 'fr' 
-      ? 'Expert en IA, apprentissage automatique et science des données pour transformer votre entreprise avec des solutions intelligentes.'
-      : 'Expert AI, machine learning, and data science consulting to transform your business with intelligent solutions.',
+      ? 'Expert en IA, apprentissage automatique et science des données pour transformer vos processus avec des solutions intelligentes.'
+      : 'Expert AI, machine learning, and data science consulting to transform your processes with intelligent solutions.',
     machineLearningSolutions: locale === 'fr' ? 'Solutions d\'apprentissage automatique' : 'Machine Learning Solutions',
     dataAnalytics: locale === 'fr' ? 'Analytique de données' : 'Data Analytics',
     aiStrategy: locale === 'fr' ? 'Stratégie IA' : 'AI Strategy',
@@ -111,7 +111,7 @@ export default function Footer({ locale }: FooterProps) {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href={`/${locale}/careers`} className="text-gray-300 hover:text-white transition-colors">
                   {footer.careers}
                 </Link>
               </li>
@@ -123,7 +123,7 @@ export default function Footer({ locale }: FooterProps) {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Ordial. {footer.allRightsReserved}.
+              © 2025 Ordial. {footer.allRightsReserved}.
             </div>
             <div className="flex space-x-6 text-sm">
               <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-white transition-colors">

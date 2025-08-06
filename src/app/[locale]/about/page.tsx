@@ -15,8 +15,8 @@ export default async function About({
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               {locale === 'fr' 
-                ? 'Nous sommes passionnés par la transformation des entreprises grâce au pouvoir de l\'IA et de la science des données.'
-                : 'We are passionate about transforming businesses through the power of AI and data science.'
+                ? 'Nous sommes passionnés par la transformation des processus grâce au pouvoir de l\'IA et de la science des données.'
+                : 'We are passionate about transforming processes through the power of AI and data science.'
               }
             </p>
           </div>
@@ -213,8 +213,8 @@ export default async function About({
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             {locale === 'fr' 
-              ? 'Discutons de la façon dont nous pouvons aider à transformer votre entreprise avec l\'IA et la science des données.'
-              : 'Let\'s discuss how we can help transform your business with AI and data science.'
+              ? 'Discutons de la façon dont nous pouvons aider à transformer vos processus avec l\'IA et la science des données.'
+              : 'Let\'s discuss how we can help transform your processes with AI and data science.'
             }
           </p>
           <a
