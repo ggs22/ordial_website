@@ -7,8 +7,8 @@
   },
   "home": {
     "hero": {
-      "title": "Transform Your Business with",
-      "titleHighlight": "Intelligent AI Solutions",
+      "title": "Transform Your Processes with",
+      "titleHighlight": "AI Solutions",
       "subtitle": "Expert AI, machine learning, and data science consulting to unlock your data's potential and drive innovation.",
       "getStarted": "Get Started",
       "ourServices": "Our Services"
@@ -181,7 +181,6 @@
       "title": "Let's Connect",
       "description": "We're here to help you unlock the power of AI and data science for your business. Reach out to us and let's discuss how we can work together.",
       "email": "Email",
-      "phone": "Phone",
       "responseTime": "Response Time",
       "responseTimeText": "We typically respond within 24 hours",
       "expectations": {

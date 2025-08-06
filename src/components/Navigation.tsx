@@ -25,7 +25,7 @@ export default function Navigation({ locale }: NavigationProps) {
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
               <Image 
-                src="/images/cropped_20250801-152229_first_letter_ordial_logo.svg"
+                src="/images/ordial_first_letter_logo_white_bg.svg"
                 alt="Ordial Logo"
                 width={120} 
                 height={40}
@@ -49,7 +49,7 @@ export default function Navigation({ locale }: NavigationProps) {
             </Link>
             <div className="flex items-center space-x-2">
               <a href="/en" className={`px-2 py-1 text-sm ${locale === 'en' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
-                🇺🇸 EN
+                🇬🇧 EN
               </a>
               <a href="/fr" className={`px-2 py-1 text-sm ${locale === 'fr' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
                 🇫🇷 FR
@@ -60,7 +60,7 @@ export default function Navigation({ locale }: NavigationProps) {
           <div className="md:hidden flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <a href="/en" className={`px-2 py-1 text-sm ${locale === 'en' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
-                🇺🇸 EN
+                🇬🇧 EN
               </a>
               <a href="/fr" className={`px-2 py-1 text-sm ${locale === 'fr' ? 'bg-[#0f1e32] text-white' : 'text-gray-600 hover:text-[#0f1e32]'} rounded`}>
                 🇫🇷 FR

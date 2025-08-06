@@ -7,8 +7,8 @@
   },
   "home": {
     "hero": {
-      "title": "Transformez votre entreprise avec des",
-      "titleHighlight": "Solutions d'IA Intelligentes",
+      "title": "Transformez vos processus avec des",
+      "titleHighlight": "Solutions d'IA",
       "subtitle": "Conseil expert en IA, apprentissage automatique et science des données pour libérer le potentiel de vos données et stimuler l'innovation.",
       "getStarted": "Commencer",
       "ourServices": "Nos Services"
@@ -181,7 +181,6 @@
       "title": "Connectons-nous",
       "description": "Nous sommes là pour vous aider à libérer la puissance de l'IA et de la science des données pour votre entreprise. Contactez-nous et discutons de la façon dont nous pouvons travailler ensemble.",
       "email": "Email",
-      "phone": "Téléphone",
       "responseTime": "Temps de Réponse",
       "responseTimeText": "Nous répondons généralement dans les 24 heures",
       "expectations": {

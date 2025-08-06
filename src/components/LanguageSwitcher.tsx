@@ -35,7 +35,7 @@ export default function LanguageSwitcher() {
   }, []);
 
   const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'en', name: 'English', flag: '🇬🇧' }, // UK flag for English
     { code: 'fr', name: 'Français', flag: '🇫🇷' }
   ];
 
