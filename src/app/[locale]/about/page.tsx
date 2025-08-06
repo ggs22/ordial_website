@@ -44,25 +44,22 @@ export default async function About({
                 }
               </p>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="grid grid-cols-2 gap-8 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-[#0f1e32] mb-2">50+</div>
-                  <div className="text-gray-600">{locale === 'fr' ? 'Projets Réalisés' : 'Projects Completed'}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-[#0f1e32] mb-2">25+</div>
-                  <div className="text-gray-600">{locale === 'fr' ? 'Clients Satisfaits' : 'Happy Clients'}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-[#0f1e32] mb-2">5+</div>
-                  <div className="text-gray-600">{locale === 'fr' ? 'Années d\'Expérience' : 'Years Experience'}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-[#0f1e32] mb-2">99%</div>
-                  <div className="text-gray-600">{locale === 'fr' ? 'Taux de Réussite' : 'Success Rate'}</div>
-                </div>
-              </div>
+            <div className="bg-gray-200 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-[#3b82f6] mb-4">
+                {locale === 'fr' ? 'Pourquoi Choisir Ordial ?' : 'Why Choose Ordial?'}
+              </h3>
+              <p className="text-gray-600 mb-4">
+                {locale === 'fr'
+                  ? 'Nous apportons une combinaison unique d\'expertise technique approfondie et de compréhension commerciale pratique. Notre approche axée sur les résultats garantit que chaque solution que nous livrons génère une valeur mesurable pour votre organisation.'
+                  : 'We bring a unique combination of deep technical expertise and practical business understanding. Our results-driven approach ensures that every solution we deliver generates measurable value for your organization.'
+                }
+              </p>
+              <p className="text-gray-600 mb-4">
+                {locale === 'fr'
+                  ? 'Nous comprenons que le code est intangible - la vraie valeur pour nos clients provient de l\'identification précise des besoins et de la fonctionnalité correspondante. Notre pragmatisme nous guide : nous nous concentrons sur ce qui fonctionne réellement pour votre entreprise.'
+                  : 'We understand that code is intangible - real value for our customers comes from precise identification of needs and corresponding functionality. Pragmatism guides us: we focus on what actually works for your business.'
+                }
+              </p>
             </div>
           </div>
         </div>
