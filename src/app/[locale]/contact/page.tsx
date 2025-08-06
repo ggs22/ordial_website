@@ -218,7 +218,7 @@ export default function Contact() {
                       <h3 className="text-lg font-semibold text-[#3b82f6] mb-1">
                         {locale === 'fr' ? 'Courriel' : 'Email'}
                       </h3>
-                      <p className="text-gray-600">info@ordial.com</p>
+                      <p className="text-gray-600">info@ordial.io</p>
                     </div>
                   </div>
 

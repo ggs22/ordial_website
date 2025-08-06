@@ -16,7 +16,6 @@ export default function Footer({ locale }: FooterProps) {
     blog: locale === 'fr' ? 'Blog' : 'Blog',
     careers: locale === 'fr' ? 'Carrières' : 'Careers',
     privacy: locale === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy',
-    terms: locale === 'fr' ? 'Conditions d\'utilisation' : 'Terms of Service',
     allRightsReserved: locale === 'fr' ? 'Tous droits réservés' : 'All rights reserved',
     description: locale === 'fr' 
       ? 'Expert en IA, apprentissage automatique et science des données pour transformer votre entreprise avec des solutions intelligentes.'
@@ -35,7 +34,7 @@ export default function Footer({ locale }: FooterProps) {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-6">
               <Image 
-                src="/images/cropped_fg_white_first_letter_ordial_logo.svg"
+                src="/images/ordial_first_letter_logo_blue_bg.svg"
                 alt="Ordial Logo"
                 width={120} 
                 height={40}
@@ -129,9 +128,6 @@ export default function Footer({ locale }: FooterProps) {
             <div className="flex space-x-6 text-sm">
               <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-white transition-colors">
                 {footer.privacy}
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                {footer.terms}
               </Link>
             </div>
           </div>

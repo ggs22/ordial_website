@@ -78,3 +78,8 @@ The contact form uses Resend for email delivery. To set up:
 - Form validation and error handling
 - Loading states and success messages
 - Server-side email processing for security
+
+### Instructions for Claude
+- Never commit or push on the main branch.
+- When asked a new feature, start a new eponym branch.
+- All modifications to the text of the website must automatically be made in both english and french.

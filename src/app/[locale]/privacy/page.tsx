@@ -15,17 +15,17 @@ export default async function Privacy({
         ? 'Chez Ordial, nous nous engageons à protéger votre vie privée. Cette politique de confidentialité décrit notre approche concernant la collecte et le traitement de vos informations personnelles.'
         : 'At Ordial, we are committed to protecting your privacy. This privacy policy outlines our approach to collecting and handling your personal information.'
     },
-    noCollection: {
-      title: locale === 'fr' ? 'Aucune Collecte de Données' : 'No Data Collection',
+    dataCollection: {
+      title: locale === 'fr' ? 'Collecte de Données' : 'Data Collection',
       content: locale === 'fr'
-        ? 'Notre site web ne collecte, ne stocke et n\'utilise aucune information personnelle des utilisateurs. Nous ne suivons pas votre activité de navigation, ne collectons pas de cookies personnels, et ne demandons pas d\'informations personnelles identifiables.'
-        : 'Our website does not collect, store, or use any personal information from users. We do not track your browsing activity, collect personal cookies, or request personally identifiable information.'
+        ? 'Notre site web collecte uniquement les informations que vous nous fournissez volontairement via notre formulaire de contact (nom, adresse e-mail, entreprise et message). Nous ne suivons pas votre activité de navigation et ne collectons pas de cookies personnels.'
+        : 'Our website only collects information that you voluntarily provide to us through our contact form (name, email address, company, and message). We do not track your browsing activity or collect personal cookies.'
     },
     contact: {
-      title: locale === 'fr' ? 'Formulaires de Contact' : 'Contact Forms',
+      title: locale === 'fr' ? 'Utilisation des Données' : 'Data Usage',
       content: locale === 'fr'
-        ? 'Bien que notre site web contienne des formulaires de contact, ces formulaires sont fournis uniquement à des fins de démonstration. Aucune information soumise par ces formulaires n\'est collectée, stockée ou traitée par nos systèmes.'
-        : 'While our website contains contact forms, these forms are provided for demonstration purposes only. No information submitted through these forms is collected, stored, or processed by our systems.'
+        ? 'Les informations que vous soumettez via notre formulaire de contact sont utilisées uniquement pour répondre à votre demande et vous contacter au sujet de nos services. Nous gardons vos adresses e-mail mais ne les partageons jamais avec des tiers.'
+        : 'Information you submit through our contact form is used solely to respond to your inquiry and contact you about our services. We keep your email addresses but never share them with third parties.'
     },
     thirdParty: {
       title: locale === 'fr' ? 'Services Tiers' : 'Third-Party Services',
@@ -48,8 +48,8 @@ export default async function Privacy({
     contact_us: {
       title: locale === 'fr' ? 'Nous Contacter' : 'Contact Us',
       content: locale === 'fr'
-        ? 'Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter à : info@ordial.com'
-        : 'If you have any questions about this privacy policy, you can contact us at: info@ordial.com'
+        ? 'Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter à : info@ordial.io'
+        : 'If you have any questions about this privacy policy, you can contact us at: info@ordial.io'
     }
   };
 
@@ -80,13 +80,13 @@ export default async function Privacy({
               <p className="text-gray-700 leading-relaxed">{content.overview.content}</p>
             </div>
 
-            {/* No Data Collection */}
+            {/* Data Collection */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#3b82f6] mb-6">{content.noCollection.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{content.noCollection.content}</p>
+              <h2 className="text-2xl font-bold text-[#3b82f6] mb-6">{content.dataCollection.title}</h2>
+              <p className="text-gray-700 leading-relaxed">{content.dataCollection.content}</p>
             </div>
 
-            {/* Contact Forms */}
+            {/* Data Usage */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-[#3b82f6] mb-6">{content.contact.title}</h2>
               <p className="text-gray-700 leading-relaxed">{content.contact.content}</p>
@@ -111,7 +111,7 @@ export default async function Privacy({
             </div>
 
             {/* Contact Us */}
-            <div className="mb-12 bg-gray-50 p-8 rounded-lg">
+            <div className="mb-12 bg-gray-200 p-8 rounded-lg">
               <h2 className="text-2xl font-bold text-[#3b82f6] mb-6">{content.contact_us.title}</h2>
               <p className="text-gray-700 leading-relaxed">{content.contact_us.content}</p>
             </div>
