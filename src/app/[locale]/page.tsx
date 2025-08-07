@@ -74,7 +74,7 @@ export default async function Home({
               </h3>
               <p className="text-gray-600">
                 {locale === 'fr' 
-                  ? 'Analyse de données avancée et visualisation pour découvrir des insights et guider les décisions commerciales stratégiques.'
+                  ? 'Analyse de données avancée et visualisation pour extraire de l\'information et guider les décisions commerciales stratégiques.'
                   : 'Advanced data analysis and visualization to uncover insights and drive strategic business decisions.'
                 }
               </p>

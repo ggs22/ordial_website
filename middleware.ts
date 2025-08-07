@@ -1,14 +1,22 @@
-import createMiddleware from 'next-intl/middleware';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'fr'],
+export function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
+  
+  // Check if the pathname starts with a supported locale
+  const pathnameIsMissingLocale = ['/en', '/fr'].every(
+    locale => !pathname.startsWith(locale) && pathname !== locale
+  );
 
-  // Used when no locale matches
-  defaultLocale: 'fr'
-});
+  // Redirect if there is no locale in the pathname
+  if (pathnameIsMissingLocale) {
+    // Redirect to French by default (as per original config)
+    return NextResponse.redirect(new URL(`/fr${pathname}`, request.url));
+  }
+}
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(fr|en)/:path*']
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|.*\\.svg$|.*\\.png$|.*\\.jpg$|.*\\.jpeg$|.*\\.gif$|.*\\.webp$).*)']
 };
