@@ -56,8 +56,8 @@ export default async function About({
               </p>
               <p className="text-gray-600 mb-4">
                 {locale === 'fr'
-                  ? 'Nous comprenons que le code est intangible - la vraie valeur pour nos clients provient de l\'identification précise des besoins et de la fonctionnalité correspondante. Notre pragmatisme nous guide : nous nous concentrons sur ce qui fonctionne réellement pour votre entreprise.'
-                  : 'We understand that code is intangible - real value for our customers comes from precise identification of needs and corresponding functionality. Pragmatism guides us: we focus on what actually works for your business.'
+                  ? 'Chez Ordial, nous transformons la complexité technologique en leviers de croissance clairs et efficaces. Nous combinons rigueur, créativité et perspicacité pratique pour garantir que chaque projet génère un impact tangible et durable sur vos opérations.'
+                  : 'At Ordial, we turn technological complexity into clear, effective drivers of growth. We combine rigor, creativity, and practical insight to ensure every project delivers tangible, lasting impact on your operations.'
                 }
               </p>
             </div>
@@ -162,8 +162,8 @@ export default async function About({
               </h3>
               <p className="text-gray-600">
                 {locale === 'fr' 
-                  ? 'Expertise de niveau doctorat en statistiques, apprentissage automatique et analyses avancées.'
-                  : 'PhD-level expertise in statistics, machine learning, and advanced analytics.'
+                  ? 'Experts en statistiques, apprentissage automatique et analyses avancées.'
+                  : 'Experts in statistics, machine learning and advanced analytics.'
                 }
               </p>
             </div>

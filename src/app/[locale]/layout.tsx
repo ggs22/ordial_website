@@ -21,7 +21,7 @@ export default async function LocaleLayout({
   const {locale} = await params;
 
   return (
-    <div>
+    <div className={inter.className}>
       <Navigation locale={locale} />
       <main>{children}</main>
       <Footer locale={locale} />
